@@ -121,7 +121,11 @@ img {
 }
 
 .illustration-header {
+  background-image: url('./images/illustration-header-mobile.svg');
+  background-repeat: no-repeat;
   position: absolute;
   left: 60%;
-  top: 60%;
+  top: 55%;
+  width: 150px;
+  height: 360px;
 }
