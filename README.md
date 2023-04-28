@@ -124,7 +124,7 @@ npx eslint .
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add About**
+- [ ] **Add Animation**
 - [ ] **Add Footer**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
