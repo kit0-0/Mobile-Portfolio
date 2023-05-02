@@ -107,7 +107,7 @@ ul {
   gap: 12px;
 }
 
-.home_header {
+.home-header {
   font-family: var(--font-round);
   color: var(--font-orange);
   font-weight: 400;
@@ -127,7 +127,7 @@ ul {
 }
 
 .intro-para {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -144,8 +144,7 @@ ul {
 }
 
 .illustration-header {
-  background-image: url('./images/illustration-header-mobile.svg');
-  background-repeat: no-repeat;
+  background: url('./images/illustration-header-mobile.svg') 90% 40% no-repeat;
   position: absolute;
   right: 0;
   top: 49%;
@@ -241,7 +240,7 @@ ul {
 .work-card {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(./images/backround_placeholder.svg);
+  background: linear-gradient(180.45deg, #26262600 0.75%, #262626e6 61.94%), url("./images/backround_placeholder.svg");
   background-size: cover;
   padding-top: 72px;
 }
@@ -276,7 +275,7 @@ ul {
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #fff3;
   font-family: var(--font-inter);
   font-style: normal;
   font-weight: 500;
@@ -380,6 +379,7 @@ ul {
   line-height: 43px;
   text-align: center;
 }
+
 /* contact section */
 .contact-section {
   display: flex;
@@ -425,7 +425,7 @@ ul {
   border: none;
   background: #fbf8f7;
   margin: 2vh 0;
-  padding: 2vh 2vh 0 2vh;
+  padding: 2vh 2vh 0;
 }
 
 .submit-btn {
