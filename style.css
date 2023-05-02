@@ -37,7 +37,7 @@ ul {
   list-style-type: none;
 }
 
-.btn{
+.btn {
   font-family: var(--font-inter);
   color: var(--font-white);
   background: var(--font-orange);
@@ -450,7 +450,7 @@ ul {
   border-top: 0.5px solid lightgray;
   padding-top: 4vh;
   padding-bottom: 4vh;
-  color: #505F79;
+  color: #505f79;
   background-color: var(--font-white);
   background-image: url("./images/line.svg");
   background-repeat: no-repeat;
