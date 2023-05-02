@@ -32,7 +32,7 @@
     </nav>
 
   </header>
-  <!--nav End-->
+
   <!-- ----Home---------- -->
   <section class="home" id="home">
     <div class="home-page">
@@ -54,19 +54,19 @@
     <!-- social media icons-->
     <ul class="icons-container">
       <li>
-        <a href="#main"><img src="./images/git.svg" class="social-media-icon" /></a>
+        <a href="#main"><img src="./images/git.svg" alt="Linkedin-icon" class="social-media-icon" /></a>
       </li>
       <li>
-        <a href="#main"><img src="./images/linkdin.svg" class="social-media-icon" /></a>
+        <a href="#main"><img src="./images/linkdin.svg" alt="linkdin-icon" class="social-media-icon" /></a>
       </li>
       <li>
-        <a href="#main"><img src="./images/angellist.svg" class="social-media-icon" /></a>
+        <a href="#main"><img src="./images/angellist.svg" alt="Angelist-icon" class="social-media-icon" /></a>
       </li>
       <li>
-        <a href="#main"><img src="./images/twitter.svg" class="social-media-icon " /></a>
+        <a href="#main"><img src="./images/twitter.svg" alt="Twitter-icon" class="social-media-icon " /></a>
       </li>
       <li>
-        <a href="#main"><img src="./images/medium.svg" class="social-media-icon" /></a>
+        <a href="#main"><img src="./images/medium.svg" alt="Medium-icon" class="social-media-icon" /></a>
       </li>
     </ul>
 
@@ -298,6 +298,40 @@
         <li class="skill-list">Web Development</li>
       </ul>
     </div>
+  </section>
+
+<!-- contact and form section -->
+  <section class="contact-section" id="contact-section">
+    <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+    <form class="contact-form" action="https://formspree.io/f/xwkjrkqw" method="post" id="form-element" onsubmit="return validateForm()">
+      <ul>
+        <li>
+          <label for="full-name"></label>
+          <input id="full-name" type="text"  name="name" placeholder="Full name" maxlength="30" required/>
+        </li>
+        <li>
+          <label for="email"></label>
+          <input id="email" type="email" name="email" placeholder="Email address"  required/>
+        </li>
+        <div id="error-message"></div>
+        <li>
+          <textarea id="msg" name="user_message" maxlength="500" placeholder="Write me something..." required></textarea>
+        </li>
+        <li>
+          <label for="submit"></label>
+		      <button id="submit" type="submit" class="submit-btn btn"> Get-in-touch</button>
+        </li>
+        </ul>
+    </form>
+    <footer>
+      <ul class="contact-media .icons-container">
+        <li><a href="#"><img class="social-media-icon" src="./images/git.svg" alt="github icon"></a></li>
+        <li><a href="#"><img class="social-media-icon" src="./images/linkdin.svg" alt="linkedin icon"></a></li>
+        <li><a href="#"><img class="social-media-icon" src="./images/angellist.svg" alt="angelist icon"></a></li>
+        <li><a href="#"><img class="social-media-icon" src="./images/twitter.svg" alt="twitter icon"></a></li>
+        <li><a href="#"><img class="social-media-icon" src="./images/medium.svg" alt="medium icon"></a></li>
+      </ul>
+    </footer>
   </section>
 </body>
 
