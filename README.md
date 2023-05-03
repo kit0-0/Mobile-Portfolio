@@ -38,14 +38,15 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">HTML</a></li>
+    <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+    <li><a href="https://www.w3schools.com/css/">css</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>Form backend service</summary>
   <ul>
-    <li><a href="#">css</a></li>
+    <li><a href="https://formspree.io/html/">formspree</a></li>
   </ul>
 </details>
 
@@ -54,6 +55,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **Demo of Linters**
+- **Demo of Portfolio**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +127,7 @@ npx eslint .
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Add Animation**
-- [ ] **Add Footer**
+- [ ] **Add Model**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
