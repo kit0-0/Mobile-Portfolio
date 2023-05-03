@@ -20,39 +20,51 @@
 <body>
 
   <!--nav Start-->
-  <header class="header" id="header">
-
-    <a href="#">Kirti Arora</a>
-
-    <!-- toggle button -->
-    <nav>
-      <button type="button" class="menu-btn">
+  <header>
+    <nav class="nav flex-center">
+      <a href="#">Kirti Arora</a>
+      <!-- toggle button -->
+      <button type="button" id="menu-container" class="flex-center menu-btn">
         <span class="open" id="menu"></span>
       </button>
+      <ul class="nav-elements">
+        <li class="nav-list"><a href="#work">Portfolio</a></li>
+        <li class="nav-list"><a href="#about">About</a></li>
+        <li class="nav-list"><a href="#contact-section">Contact</a></li>
+        <li class="nav-list">
+          <a href="#contact-section"><svg width="22" height="18" viewBox="0 0 22 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.4 2H15.6C16.7531 2 17.4977 2.00156 18.0643 2.04785C18.6077 2.09225 18.8091 2.1676 18.908 2.21799C19.2843 2.40973 19.5903 2.71569 19.782 3.09202C19.8324 3.19091 19.9078 3.39235 19.9521 3.93567C19.9984 4.50235 20 5.24689 20 6.4V11.6C20 12.7531 19.9984 13.4977 19.9521 14.0643C19.9078 14.6077 19.8324 14.8091 19.782 14.908C19.5903 15.2843 19.2843 15.5903 18.908 15.782C18.8091 15.8324 18.6077 15.9078 18.0643 15.9521C17.4977 15.9984 16.7531 16 15.6 16H6.4C5.24689 16 4.50235 15.9984 3.93567 15.9521C3.39235 15.9078 3.19091 15.8324 3.09202 15.782C2.71569 15.5903 2.40973 15.2843 2.21799 14.908C2.1676 14.8091 2.09225 14.6077 2.04785 14.0643C2.00156 13.4977 2 12.7531 2 11.6V6.4C2 5.24689 2.00156 4.50235 2.04785 3.93567C2.09225 3.39235 2.1676 3.19091 2.21799 3.09202C2.40973 2.71569 2.71569 2.40973 3.09202 2.21799C3.19091 2.1676 3.39235 2.09225 3.93567 2.04785C4.50235 2.00156 5.24689 2 6.4 2ZM0 6.4C0 4.15979 0 3.03969 0.435974 2.18404C0.819467 1.43139 1.43139 0.819467 2.18404 0.435974C3.03969 0 4.15979 0 6.4 0H15.6C17.8402 0 18.9603 0 19.816 0.435974C20.5686 0.819467 21.1805 1.43139 21.564 2.18404C22 3.03969 22 4.15979 22 6.4V11.6C22 13.8402 22 14.9603 21.564 15.816C21.1805 16.5686 20.5686 17.1805 19.816 17.564C18.9603 18 17.8402 18 15.6 18H6.4C4.15979 18 3.03969 18 2.18404 17.564C1.43139 17.1805 0.819467 16.5686 0.435974 15.816C0 14.9603 0 13.8402 0 11.6V6.4ZM5.5547 4.16795C5.09517 3.8616 4.4743 3.98577 4.16795 4.4453C3.8616 4.90483 3.98577 5.5257 4.4453 5.83205L10.4453 9.83205C10.7812 10.056 11.2188 10.056 11.5547 9.83205L17.5547 5.83205C18.0142 5.5257 18.1384 4.90483 17.8321 4.4453C17.5257 3.98577 16.9048 3.8616 16.4453 4.16795L11 7.79815L5.5547 4.16795Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+      </ul>
     </nav>
-
   </header>
 
   <!-- ----Home---------- -->
+
   <section class="home" id="home">
     <div class="home-page">
-      <div>
-        <h1 class="home-header">Hey There. <br/>I'm Kirti</h1>
+      <div class="text-container">
+        <h1 class="home-header">Hey There. <br />I'm Kirti</h1>
+        <div class="home-description">
+          <h3 class="flex-center intro-heading">I'm a Software Developer</h3>
+          <p class="intro-para">
+            I can help you build a product , feature or website. Look through some of my work and experience! If you
+            like what you see and have a project you need coded,
+            don’t hesitate to contact me.
+          </p>
+        </div>
       </div>
-
-      <div class="home-description">
-        <h3 class="intro-heading">I'm a Software Developer</h3>
-
-        <p class="intro-para">
-          I can help you build a product, feature or website Look through some
-          of my work and experiece! If you like what you see and have a
-          project you need coded, don't hesitate to contact me.
-        </p>
-      </div>
+      <!--illustrations-->
+      <div class="illustration-header" aria-hidden="true"></div>
     </div>
 
     <!-- social media icons-->
-    <ul class="icons-container">
+    <ul class="flex-center icons-container">
       <li>
         <a href="#main"><img src="./images/git.svg" alt="Linkedin-icon" class="social-media-icon" /></a>
       </li>
@@ -69,21 +81,16 @@
         <a href="#main"><img src="./images/medium.svg" alt="Medium-icon" class="social-media-icon" /></a>
       </li>
     </ul>
-
-    <!--illustrations-->
-    <div class="illustration-header" aria-hidden="true"></div>
-
   </section>
-  <!-- work section -->
-  <section class="work-section-container">
-    <div class="work-title-card">
-      <h2 class="work-title-heading">My Recent Works</h2>
 
+  <!-- work section -->
+  <section class="work-section-container" id="work">
+    <div class="work-title-card flex-center">
+      <h2 class="work-title-heading">My Recent Works</h2>
       <svg alt="horizental line" class="title-separator" width="795" height="2" viewBox="0 0 795 2" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path d="M794.5 1.00007L0.5 1" stroke="#212121" />
       </svg>
-
     </div>
     <div class="work-title-card">
       <img class="placeholder-image" src="./images/placeholder.svg" alt="gym-fit" />
@@ -94,7 +101,7 @@
           sign-ups required. has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a standard dummy text.
         </p>
-        <ul class="tag-list">
+        <ul class="flex-center tag-list">
           <li class="tag-items">css</li>
           <li class="tag-items">html</li>
           <li class="tag-items">bootstrap</li>
@@ -103,7 +110,6 @@
         <a class="project-button btn">See Project</a>
       </div>
     </div>
-
     <div class="card-holder">
       <div class="work-card">
         <div class="info-holder">
@@ -114,15 +120,14 @@
             A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's
             standard.
           </p>
-          <ul class="tag-list">
-
-            <li class='card-items'>HTML</li>
-            <li class='card-items'>Bootstrap</li>
-            <li class='card-items'>ruby</li>
+          <ul class="flex-center tag-list">
+            <li class='flex-center card-items'>HTML</li>
+            <li class='flex-center card-items'>Bootstrap</li>
+            <li class='flex-center card-items'>ruby</li>
           </ul>
         </div>
         <div class='button-section'>
-          <a class='card-button btn'>See Project</a>
+          <a class='flex-center card-button  btn'>See Project</a>
         </div>
       </div>
       <div class="work-card">
@@ -134,15 +139,14 @@
             A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's
             standard.
           </p>
-          <ul class="tag-list">
-
-            <li class='card-items'>HTML</li>
-            <li class='card-items'>Bootstrap</li>
-            <li class='card-items'>ruby</li>
+          <ul class="flex-center tag-list">
+            <li class='flex-center card-items'>HTML</li>
+            <li class='flex-center card-items'>Bootstrap</li>
+            <li class='flex-center card-items'>ruby</li>
           </ul>
         </div>
         <div class='button-section'>
-          <a class='card-button btn'>See Project</a>
+          <a class='flex-center card-button btn'>See Project</a>
         </div>
       </div>
       <div class="work-card">
@@ -154,15 +158,14 @@
             A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's
             standard.
           </p>
-          <ul class="tag-list">
-
-            <li class='card-items'>HTML</li>
-            <li class='card-items'>Bootstrap</li>
-            <li class='card-items'>ruby</li>
+          <ul class="flex-center tag-list">
+            <li class='flex-center card-items'>HTML</li>
+            <li class='flex-center card-items'>Bootstrap</li>
+            <li class='flex-center card-items'>ruby</li>
           </ul>
         </div>
         <div class='button-section'>
-          <a class='card-button btn'>See Project</a>
+          <a class='flex-center card-button btn'>See Project</a>
         </div>
       </div>
       <div class="work-card">
@@ -174,15 +177,14 @@
             A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's
             standard.
           </p>
-          <ul class="tag-list">
-
-            <li class='card-items'>HTML</li>
-            <li class='card-items'>Bootstrap</li>
-            <li class='card-items'>ruby</li>
+          <ul class="flex-center tag-list">
+            <li class='flex-center card-items'>HTML</li>
+            <li class='flex-center card-items'>Bootstrap</li>
+            <li class='flex-center card-items'>ruby</li>
           </ul>
         </div>
         <div class='button-section'>
-          <a class='card-button btn'>See Project</a>
+          <a class='flex-center card-button btn'>See Project</a>
         </div>
       </div>
       <div class="work-card">
@@ -194,15 +196,14 @@
             A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's
             standard.
           </p>
-          <ul class="tag-list">
-
-            <li class='card-items'>HTML</li>
-            <li class='card-items'>Bootstrap</li>
-            <li class='card-items'>ruby</li>
+          <ul class="flex-center tag-list">
+            <li class='flex-center card-items'>HTML</li>
+            <li class='flex-center card-items'>Bootstrap</li>
+            <li class='flex-center card-items'>ruby</li>
           </ul>
         </div>
         <div class='button-section'>
-          <a class='card-button btn'>See Project</a>
+          <a class='flex-center card-button btn'>See Project</a>
         </div>
       </div>
       <div class="work-card">
@@ -214,22 +215,18 @@
             A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's
             standard.
           </p>
-          <ul class="tag-list">
-
-            <li class='card-items'>HTML</li>
-            <li class='card-items'>Bootstrap</li>
-            <li class='card-items'>ruby</li>
+          <ul class="flex-center tag-list">
+            <li class='flex-center card-items'>HTML</li>
+            <li class='flex-center card-items'>Bootstrap</li>
+            <li class='flex-center card-items'>ruby</li>
           </ul>
         </div>
         <div class='button-section'>
-          <a class='card-button btn'>See Project</a>
+          <a class='flex-center card-button btn'>See Project</a>
         </div>
       </div>
     </div>
-
-
   </section>
-
 
   <!-- about section -->
   <section class="about" id="about">
@@ -237,12 +234,12 @@
       <div class="about-sub-section">
         <h2 class="about-header">About me</h2>
         <p class="about-description">
-          Hello I'm a software developer! I can help you build a product ,
+          Hello I'm a software developer! I can help you build a product,
           feature or website Look through some of my work and experience! If
           you like what you see and have a project you need coded, don't
           hestiate to contact me.
         </p>
-        <button type="button" class="about-btn btn">Get My Resume</button>
+        <button type="button" class="flex-center about-btn btn">Get My Resume</button>
       </div>
       <div class="about-illustration">
         <img src="./images/about-illustration.svg" alt="img" />
@@ -254,8 +251,8 @@
       <path d="M794.5 1.00007L0.5 1" stroke="#FFF" />
     </svg>
 
-    <!--skills-->
-    <div class="skills">
+    <!--flex-center skills-->
+    <div class="flex-center skills">
       <ul>
         <li class="skill-header">
           <span class="rectangle"><svg width="27" height="26" viewBox="0 0 27 26" fill="none"
@@ -269,7 +266,6 @@
         <li class="skill-list">Html</li>
         <li class="skill-list">Css</li>
       </ul>
-
       <ul>
         <li class="skill-header">
           <span class="square"><svg width="18" height="19" viewBox="0 0 18 19" fill="none"
@@ -282,13 +278,12 @@
         <li class="skill-list">RSpec</li>
         <li class="skill-list">Capybara</li>
       </ul>
-
       <ul>
         <li class="skill-header">
           <span class="circle"><svg width="18" height="19" viewBox="0 0 18 19" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <rect y="0.455811" width="18" height="18" rx="9" fill="#FF6B00" />
-            </svg> </span>Skills
+            </svg> </span>skills
         </li>
         <li class="skill-list">Database Management</li>
 
@@ -300,39 +295,39 @@
     </div>
   </section>
 
-<!-- contact and form section -->
+  <!-- contact and form section -->
   <section class="contact-section" id="contact-section">
     <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-    <form class="contact-form" action="https://formspree.io/f/xwkjrkqw" method="post" id="form-element" onsubmit="return validateForm()">
+    <form class="contact-form" action="https://formspree.io/f/xwkjrkqw" method="post" id="form-element">
       <ul>
         <li>
           <label for="full-name"></label>
-          <input id="full-name" type="text"  name="name" placeholder="Full name" maxlength="30" required/>
+          <input id="full-name" type="text" name="name" placeholder="Full name" maxlength="30" required />
         </li>
         <li>
           <label for="email"></label>
-          <input id="email" type="email" name="email" placeholder="Email address"  required/>
+          <input id="email" type="email" name="email" placeholder="Email address" required />
         </li>
         <div id="error-message"></div>
         <li>
-          <textarea id="msg" name="user_message" maxlength="500" placeholder="Write me something..." required></textarea>
+          <textarea id="msg" name="user_message" maxlength="500" placeholder="Write me something..."
+            required></textarea>
         </li>
         <li>
           <label for="submit"></label>
-		      <button id="submit" type="submit" class="submit-btn btn"> Get-in-touch</button>
+          <button id="submit" type="submit" class="submit-btn btn"> Get in touch</button>
         </li>
-        </ul>
-    </form>
-    <footer>
-      <ul class="contact-media">
-        <li><a href="#"><img class="social-media-icon" src="./images/git.svg" alt="github icon"></a></li>
-        <li><a href="#"><img class="social-media-icon" src="./images/linkdin.svg" alt="linkedin icon"></a></li>
-        <li><a href="#"><img class="social-media-icon" src="./images/angellist.svg" alt="angelist icon"></a></li>
-        <li><a href="#"><img class="social-media-icon" src="./images/twitter.svg" alt="twitter icon"></a></li>
-        <li><a href="#"><img class="social-media-icon" src="./images/medium.svg" alt="medium icon"></a></li>
       </ul>
-    </footer>
+    </form>
   </section>
+  <footer>
+    <ul class="flex-center contact-media">
+      <li><a href="#"><img class="social-media-icon" src="./images/footer-git.svg" alt="github icon"></a></li>
+      <li><a href="#"><img class="social-media-icon" src="./images/footer-linkdin.svg" alt="linkedin icon"></a></li>
+      <li><a href="#"><img class="social-media-icon" src="./images/footer-ang.svg" alt="angelist icon"></a></li>
+      <li><a href="#"><img class="social-media-icon" src="./images/footer-twiter.svg" alt="twitter icon"></a></li>
+      <li><a href="#"><img class="social-media-icon color" src="./images/footer-medium.svg" alt="medium icon"></a></li>
+    </ul>
+  </footer>
 </body>
-
 </html>
