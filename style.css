@@ -686,6 +686,7 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 100px;
   }
+
   .contact-section h2 {
     margin-left: 135px;
   }
