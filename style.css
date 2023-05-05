@@ -163,7 +163,7 @@ ul {
   background: url('./images/illustration-header-mobile.svg') 90% 40% no-repeat;
   position: absolute;
   right: 0;
-  top: 49%;
+  top: 50%;
   width: 150px;
   height: 360px;
 }
@@ -633,7 +633,7 @@ ul {
     line-height: 52px;
     text-align: start;
     color: #262626;
-    margin-left: 135px;
+    margin-left: 14px;
   }
 
   .contact-form {
@@ -685,5 +685,8 @@ ul {
   .skills {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 100px;
+  }
+  .contact-section h2 {
+    margin-left: 135px;
   }
 }
