@@ -63,8 +63,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link](https://kit0-0.github.io/Mobile-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -136,7 +134,7 @@ npx eslint .
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add Animation**
+- [ ] **Portfolio: mobile menu**
 - [ ] **Add Model**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -147,7 +145,9 @@ npx eslint .
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+- [Nelly](https://github.com/lily4178993)
+
+Feel free to check the [issues page](https://github.com/kit0-0/Mobile-Portfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
