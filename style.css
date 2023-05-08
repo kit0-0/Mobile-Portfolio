@@ -340,7 +340,6 @@ ul {
 .about-illustration {
   width: 100%;
   text-align: right;
-  padding-top: -80px;
 }
 
 .about-line {
@@ -357,6 +356,7 @@ ul {
 
 /* SKILLS */
 .skills {
+  padding: 120px 0;
   display: grid;
   grid-template-columns: 1fr;
 }
