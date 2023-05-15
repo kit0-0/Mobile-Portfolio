@@ -101,6 +101,47 @@ ul {
   padding: 20px;
 }
 
+.close {
+  background: url('./images/cross.svg') no-repeat;
+  padding: 12px;
+}
+
+.mobile-nav-elements.active {
+  display: block;
+  z-index: 1;
+  width: 100%;
+}
+
+.mobile-nav-elements {
+  background: var(--nav-background);
+  position: absolute;
+  right: 0;
+  top: 7%;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  mix-blend-mode: normal;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  overflow: hidden;
+}
+
+body.mobile-nav-open {
+  overflow: hidden;
+}
+
+.mobile-nav-list {
+  color: #fff5e1;
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 20px 30px;
+  padding: 20px 0 15px 30px;
+  border: none;
+  border-bottom: 1px solid #6f6c6b;
+  display: block;
+}
+
 /* main */
 .home {
   height: 600px;
@@ -112,6 +153,10 @@ ul {
   align-items: flex-start;
   line-height: 24px;
   gap: 12px;
+}
+
+#logo.hide {
+  visibility: hidden;
 }
 
 .home-header {

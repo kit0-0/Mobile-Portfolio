@@ -22,11 +22,16 @@
   <!--nav Start-->
   <header>
     <nav class="nav flex-center">
-      <a href="#">Kirti Arora</a>
+      <a id="logo" href="#">Kirti Arora</a>
       <!-- toggle button -->
-      <button type="button" id="menu-container" class="flex-center menu-btn">
+      <button type="button" id="menu-container" class="flex-center menu-btn" onclick="togglerMenu()">
         <span class="open" id="menu"></span>
       </button>
+      <ul class="mobile-nav-elements" id="nav-elements">
+        <li class="mobile-nav-list active"><a href="#work">Portfolio</a></li>
+        <li class="mobile-nav-list active"><a href="#about">About</a></li>
+        <li class="mobile-nav-list active"><a href="#contact-section">Contact</a></li>
+      </ul>
       <ul class="nav-elements">
         <li class="nav-list"><a href="#work">Portfolio</a></li>
         <li class="nav-list"><a href="#about">About</a></li>
@@ -329,5 +334,6 @@
       <li><a href="#"><img class="social-media-icon color" src="./images/footer-medium.svg" alt="medium icon"></a></li>
     </ul>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

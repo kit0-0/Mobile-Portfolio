@@ -124,8 +124,10 @@ npx eslint .
 ## 👥 Author <a name="author"></a>
 
 👤 Kiko
+👤 Htet Wai Yan
 
 - GitHub: [@kit0-0](https://github.com/kit0-0)
+- GitHub: [Htet-Wai-Yan](https://github.com/HtetWaiYan7191)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
