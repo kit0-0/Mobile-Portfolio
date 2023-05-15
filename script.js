@@ -14,3 +14,15 @@ function togglerMenu() {
 mobileNavList.forEach((element) => {
   element.addEventListener('click', togglerMenu);
 });
+
+// form validation
+const form = document.querySelector('.contact-form');
+const emailInput = form.querySelector('#email');
+const errorMessage = form.querySelector('#error-message');
+
+form.addEventListener('submit', (event) => {
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    event.preventDefault();
+    errorMessage.textContent = 'Please enter a lower case email address.';
+  }
+});
