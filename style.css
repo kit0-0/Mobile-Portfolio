@@ -109,6 +109,7 @@ ul {
 .mobile-nav-elements.active {
   display: block;
   z-index: 1;
+  width: 100%;
 }
 
 .mobile-nav-elements {
@@ -121,6 +122,11 @@ ul {
   display: none;
   mix-blend-mode: normal;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  overflow: hidden;
+}
+
+body.mobile-nav-open {
+  overflow: hidden;
 }
 
 .mobile-nav-list {
@@ -129,7 +135,7 @@ ul {
   font-size: 1.4rem;
   padding: 20px 0 15px 30px;
   border: none;
-  border-bottom: 1px solid #fff5e1;
+  border-bottom: 1px solid #6f6c6b;
   display: block;
 }
 
