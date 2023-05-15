@@ -8,6 +8,7 @@ function togglerMenu() {
   menuOpenClose.classList.toggle('open');
   menuOpenClose.classList.toggle('close');
   logo.classList.toggle('hide');
+  document.body.classList.toggle('mobile-nav-open');
 }
 
 mobileNavList.forEach((element) => {
