@@ -131,8 +131,11 @@ body.mobile-nav-open {
 
 .mobile-nav-list {
   color: #fff5e1;
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
   margin: 20px 30px;
-  font-size: 1.4rem;
   padding: 20px 0 15px 30px;
   border: none;
   border-bottom: 1px solid #6f6c6b;
