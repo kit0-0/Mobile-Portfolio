@@ -460,6 +460,9 @@ body.mobile-nav-open {
 #error-message {
   color: red;
   display: block;
+  margin-top: 14px;
+  font-size: 14px;
+  font-family: var(--font-roboto);
 }
 
 .contact-form textarea {
