@@ -229,6 +229,14 @@ body.mobile-nav-open {
   margin-bottom: 80px;
 }
 
+.work-project-display{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+  margin-bottom: 80px;
+}
+
 .work-title-heading {
   margin-top: 100px;
   font-weight: 400;
@@ -272,6 +280,7 @@ body.mobile-nav-open {
 }
 
 .tag-list {
+  display: flex;
   flex-direction: row;
   padding: 0;
   gap: 12px;
@@ -554,7 +563,7 @@ body.mobile-nav-open {
   /* work */
   .work-section-container {
     margin-top: 100px;
-    padding: 0 8%;
+    padding: 0 7%;
   }
 
   .work-title-card {
@@ -565,7 +574,9 @@ body.mobile-nav-open {
     grid-template-columns: auto 1fr auto;
   }
 
-  .work-title-card:nth-child(2) {
+  .work-project-display {
+    width: 100%;
+    display: grid;
     grid-template-columns: 2fr 1fr;
   }
 
@@ -603,10 +614,6 @@ body.mobile-nav-open {
     width: 100%;
     bottom: 0;
     opacity: 0;
-  }
-
-  .work-card:hover {
-    background-image: url('./images/ImgPlaceholder.png');
   }
 
   .work-card:hover .info-holder {
@@ -737,5 +744,194 @@ body.mobile-nav-open {
 
   .contact-section h2 {
     margin-left: 135px;
+  }
+}
+
+/* Popup */
+
+.popup-window {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.1rem);
+  transition: all 0.5s ease;
+  overflow: scroll;
+}
+
+.popUp {
+  display: flex;
+  
+}
+
+.popup-holder {
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+
+  background-color: var(--font-white);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.popup-close-btn-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.title-xbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-heading-pop {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  line-height: 44px !important;
+  text-align: left;
+  color: #172b4d;
+  width: 90%;
+}
+
+.popup-close-btn-holder svg {
+  cursor: pointer;
+}
+
+.popup-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.popup-tag-list li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  border: 1px solid #979493;
+}
+
+.popup-feature {
+  background-color: var(--font-white);
+  border: 1px solid var(--color-body);
+  color: var(--main-background);
+}
+
+.popup-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.popup-image {
+  width: 100%;
+  max-width: 70rem;
+}
+
+.popup-info-holder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.popup-description {
+  width: inherit;
+  height: auto;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-body);
+}
+
+.popup-btn-holder {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  justify-content: space-between;
+}
+
+.popup-btn {
+  width: 45%;
+  height: 48px;
+  color: var(--font-white);
+  background-color: var(--font-orange);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  text-decoration: none;
+  border: 1px solid var(--font-orange);
+}
+
+.popup-btn svg path {
+  fill: var(--font-white);
+}
+
+.popup-btn:hover {
+  background-color: var(--color-secondary);
+  color: var(--font-orange);
+  border: 1px solid var(--font-orange);
+}
+
+.popup-btn:hover svg path {
+  fill: var(--font-orange);
+}
+
+@media screen and (min-width: 768px) {
+ 
+  .popup-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.55rem;
+  }
+
+  .popup-btn-holder {
+    justify-content: left;
+    column-gap: 2rem;
+    
+  }
+
+  .popup-btn-holder{
+      display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 12px;
+gap: 12px;
+  }
+
+  .popup-btn {
+    width: 30%;
+  }
+
+  .popup-holder {
+    padding: 1rem;
+    margin:10rem  6rem 1rem 6rem;
+  }
+
+  .popup-info-holder {
+    row-gap: 4rem;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .popup-holder {
+    margin-top: 20rem;
   }
 }
