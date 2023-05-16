@@ -27,14 +27,14 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// Save form data to local storage
+
 form.addEventListener('input', () => {
   const formData = Object.fromEntries(new FormData(form).entries());
-  localStorage.setItem('formData', JSON.stringify(formData));
+  localStorage.setItem('UserData', JSON.stringify(formData));
 });
 
-// Load saved form data from local storage
-const savedFormData = JSON.parse(localStorage.getItem('formData'));
+
+const savedFormData = JSON.parse(localStorage.getItem('UserData'));
 if (savedFormData) {
   Object.entries(savedFormData).forEach(([name, value]) => {
     const input = form.elements[name];
