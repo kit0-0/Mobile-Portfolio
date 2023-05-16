@@ -27,12 +27,10 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-
 form.addEventListener('input', () => {
   const formData = Object.fromEntries(new FormData(form).entries());
   localStorage.setItem('UserData', JSON.stringify(formData));
 });
-
 
 const savedFormData = JSON.parse(localStorage.getItem('UserData'));
 if (savedFormData) {
