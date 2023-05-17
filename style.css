@@ -247,10 +247,6 @@ body.mobile-nav-open {
   font-style: normal;
 }
 
-.work-card:hover .info-holder {
-  opacity: 0;
-}
-
 .title-separator {
   width: calc(90% - 0px / 2 + 0.5px);
 }
@@ -361,6 +357,10 @@ body.mobile-nav-open {
   padding: 13px 0;
   justify-content: center;
   letter-spacing: 0.03em;
+}
+
+.work-card:hover .info-holder {
+  opacity: 0;
 }
 
 /* About */
@@ -619,8 +619,6 @@ body.mobile-nav-open {
     bottom: 0;
     opacity: 0;
   }
-
-  
 
   .work-card:hover .button-section {
     opacity: 1;
