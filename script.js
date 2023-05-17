@@ -205,13 +205,13 @@ function createPopup(project) {
   <div class="popup-holder">
     <div class="popup-close-btn-holder">
       <div class="title-xbtn">
-        <h1 id="popup-header" class="project-heading project-heading-pop">${project.name}</h1>
+        <h1 id="popup-header" class="project-heading-pop">${project.name}</h1>
         <svg
           id="x-popup"
           class=".xBtn"
           xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
+          width="30"
+          height="30"
           viewBox="0 0 24 24"
         >
           <path
@@ -236,10 +236,14 @@ function createPopup(project) {
       <div class="popup-info-holder">
         <p id="popup-description" class="popup-description">
         ${project.description}
+        
         </p>
+        <p id="popup-description1" class="popup-description desktop-des1">
+    ${project.description}
+  </p>
         <div class="popup-btn-holder">
-          <a id="seeLivePopup" class="popup-btn" href="${project.demoLink}"
-            >Demo&nbsp;
+          <a id="seeLivePopup" class="popup-btn btn" href="${project.demoLink}"
+            >See live
             <svg
               width="18"
               height="18"
@@ -255,8 +259,8 @@ function createPopup(project) {
               />
             </svg>
           </a>
-          <a id="seeSourcePopup" class="popup-btn" href="${project.codeLink}"
-            >Code &nbsp;
+          <a id="seeSourcePopup" class="popup-btn btn" href="${project.codeLink}"
+            >See source
             <svg
               width="18"
               height="20"
